@@ -14,6 +14,7 @@
     </header>
     <section>
         <header>
+            <label for="input">Unidad</label>
             <select onchange="controller.filterUnits(this.value)">
                 <option value="mass">Mass</option>
                 <option value="volume">Volume</option>
@@ -26,7 +27,9 @@
         <input type="number" id="input">
         <label for="output">Salida</label>
         <input type="number" id="output" disabled="">
+        <label for="inputSelector">Selecciona entradad</label>
         <select id="inputSelector"></select>
+        <label for="outputSelector">Selecciona salida</label>
         <select id="outputSelector"></select>
         <footer>
             <button onclick="controller.convert()">&#x1F9EE</button>
