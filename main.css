@@ -1,0 +1,45 @@
+/* Hide number spinners */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body header {
+    text-align: center;
+}
+
+section {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    /*grid-auto-rows: 5vh;*/
+    column-gap: 2vw;
+    justify-content: center;
+}
+
+section header {
+    grid-column-start: span 2;
+    margin-bottom: 2vh;
+}
+
+section header select {
+    width: 100%;
+}
+
+section footer {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+section footer button {
+    height: 100%;
+    font-size: 2em;
+    text-align: center;
+}

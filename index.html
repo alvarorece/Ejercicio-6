@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertir unidades</title>
+</head>
+
+<body>
+    <header>
+        <h1>Convertir unidades</h1>
+    </header>
+    <section>
+        <header>
+            <select onchange="controller.filterUnits(this.value)">
+                <option value="mass">Mass</option>
+                <option value="volume">Volume</option>
+                <option value="preassure">Preassure</option>
+                <option value="distance">Distance</option>
+                <option value="power">Power</option>
+            </select>
+        </header>
+        <label for="input">Entrada</label>
+        <input type="number" id="input">
+        <label for="output">Salida</label>
+        <input type="number" id="output" disabled="">
+        <select id="inputSelector"></select>
+        <select id="outputSelector"></select>
+        <footer>
+            <button onclick="controller.convert()">&#x1F9EE</button>
+        </footer>
+    </section>
+</body>
+<script src="Unit.js"></script>
+<script src="ConversorController.js"></script>
+<script src="main.js"></script>
+</html>
