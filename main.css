@@ -16,7 +16,9 @@ body header {
 label {
     display: none;
 }
-
+selector {
+    font-weight: bold;
+}
 section {
     margin: 0 auto;
     display: grid;
