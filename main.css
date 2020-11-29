@@ -13,12 +13,17 @@ body header {
     text-align: center;
 }
 
+label {
+    display: none;
+}
+
 section {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 40vw 40vw;
     /*grid-auto-rows: 5vh;*/
     column-gap: 2vw;
+    row-gap: 2vh;
     justify-content: center;
 }
 
